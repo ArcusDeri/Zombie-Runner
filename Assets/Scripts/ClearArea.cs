@@ -7,6 +7,7 @@ public class ClearArea : MonoBehaviour {
 	public float TimeSinceLastTrigger = 0f;
 
 	private GameObject HUD;
+	private bool IsDisplayed = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +18,20 @@ public class ClearArea : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TimeSinceLastTrigger += Time.deltaTime;
-		if (TimeSinceLastTrigger >= 1f) {
+		if (TimeSinceLastTrigger >= 1f && Time.realtimeSinceStartup > 10f && !IsDisplayed) {
 			SendMessageUpwards ("OnFindClearArea");
 			HUD.SetActive (true);
+			IsDisplayed = true;
+			Invoke ("HideMessage", 10f);
 		}
 	}
 
 	void OnTriggerStay(){
 		TimeSinceLastTrigger = 0f;
+		HUD.SetActive (false);
+	}
+
+	void HideMessage(){
 		HUD.SetActive (false);
 	}
 }
