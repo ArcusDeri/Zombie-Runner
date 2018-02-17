@@ -18,6 +18,7 @@ public class ClearArea : MonoBehaviour {
 	void Update () {
 		TimeSinceLastTrigger += Time.deltaTime;
 		if (TimeSinceLastTrigger >= 1f) {
+			SendMessageUpwards ("OnFindClearArea");
 			HUD.SetActive (true);
 		}
 	}

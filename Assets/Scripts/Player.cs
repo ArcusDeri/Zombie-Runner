@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+	public Helicopter MyHelicopter;
 	public Transform PlayerSpawnPoints;
 	public bool RespawnRandomly = false;
 
@@ -25,5 +26,11 @@ public class Player : MonoBehaviour {
 	private void Respawn(){
 		int i = Random.Range (1, SpawnPoints.Length);
 		transform.position = SpawnPoints [i].transform.position;
+	}
+
+	void OnFindClearArea(){
+		MyHelicopter.Call ();
+		//TODO:Deploy a flare
+		//TODO:Spawn zombies
 	}
 }
