@@ -24,5 +24,6 @@ public class ClearArea : MonoBehaviour {
 
 	void OnTriggerStay(){
 		TimeSinceLastTrigger = 0f;
+		HUD.SetActive (false);
 	}
 }
