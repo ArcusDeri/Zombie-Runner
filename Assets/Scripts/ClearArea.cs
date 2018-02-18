@@ -26,9 +26,11 @@ public class ClearArea : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay(){
-		TimeSinceLastTrigger = 0f;
-		HUD.SetActive (false);
+	void OnTriggerStay(Collider collider){
+		if (collider.tag != "Player") {
+			TimeSinceLastTrigger = 0f;
+			HUD.SetActive (false);
+		}
 	}
 
 	void HideMessage(){

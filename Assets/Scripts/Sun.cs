@@ -6,11 +6,8 @@ public class Sun : MonoBehaviour {
 
 	public float MinutesPerSecond;
 
-	private Quaternion StartRotation;
-
 	// Use this for initialization
 	void Start () {
-		StartRotation = transform.rotation;
 	}
 	
 	// Update is called once per frame
