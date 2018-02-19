@@ -65,9 +65,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1603876972448086
+--- !u!1 &1375107241150552
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4487507573970334}
+  - component: {fileID: 114982176744903904}
+  - component: {fileID: 82451855645459318}
+  m_Layer: 0
+  m_Name: InnerVoice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1603876972448086
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -94,11 +111,10 @@ GameObject:
   - component: {fileID: 114283709458904466}
   - component: {fileID: 54740665306462724}
   - component: {fileID: 82052797103188356}
-  - component: {fileID: 82576146423338428}
   - component: {fileID: 114364311938231518}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,12 +125,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603876972448086}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4633394585848614}
-  m_RootOrder: 1
+  m_Father: {fileID: 4487507573970334}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4394005412549302
 Transform:
@@ -130,18 +146,32 @@ Transform:
   m_Father: {fileID: 4633394585848614}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4487507573970334
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375107241150552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4162037557626216}
+  m_Father: {fileID: 4633394585848614}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4633394585848614
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1798087584768404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 148, y: 61, z: 133.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4394005412549302}
-  - {fileID: 4162037557626216}
+  - {fileID: 4487507573970334}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -295,12 +325,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &82576146423338428
+--- !u!82 &82451855645459318
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1798087584768404}
+  m_GameObject: {fileID: 1375107241150552}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -521,10 +551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e319e98541ae240ba3edecc470564d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyHelicopter: {fileID: 0}
   PlayerSpawnPoints: {fileID: 0}
   RespawnRandomly: 1
-  WhatHappened: {fileID: 0}
 --- !u!114 &114426111434730926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,6 +613,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114982176744903904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375107241150552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4df257bbcfebb844b8d3749f809d04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
+  GoodLandingArea: {fileID: 8300000, guid: 0f00476efd1774d2587939e6bd1a6bb4, type: 3}
 --- !u!124 &124682960086832882
 Behaviour:
   m_ObjectHideFlags: 1
