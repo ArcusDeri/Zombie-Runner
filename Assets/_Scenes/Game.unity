@@ -583,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpawnPoints: {fileID: 2090772818}
   RespawnRandomly: 1
-  FlarePrefab: {fileID: 1392615833645592, guid: 70221f133030a7148a97512d684f59c8,
+  LandingAreaPrefab: {fileID: 1392615833645592, guid: 70221f133030a7148a97512d684f59c8,
     type: 2}
 --- !u!82 &628131401
 AudioSource:

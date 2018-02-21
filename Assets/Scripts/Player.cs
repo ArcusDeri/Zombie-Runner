@@ -34,6 +34,6 @@ public class Player : MonoBehaviour {
 	}
 
 	void DropFlare(){
-		Instantiate (Flare, transform.position, transform.rotation);
+		Instantiate (LandingAreaPrefab, transform.position, transform.rotation);
 	}
 }
