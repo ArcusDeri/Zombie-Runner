@@ -30,7 +30,6 @@ public class Player : MonoBehaviour {
 
 	void OnFindClearArea(){
 		Invoke ("DropFlare", 3f);
-		//TODO:Spawn zombies
 	}
 
 	void DropFlare(){
