@@ -8,6 +8,7 @@ public class Helicopter : MonoBehaviour {
 	private Rigidbody MyRigidBody;
 	private Transform LandingPosition;
 	private float DistanceToFly;
+	private float FlightSpeed = 120f;
 
 	// Use this for initialization
 	void Start () {
@@ -25,12 +26,25 @@ public class Helicopter : MonoBehaviour {
 	void Update(){
 		if (IsCalled) {
 			DistanceToFly = Vector3.Distance (transform.position, LandingPosition.transform.position);
-			transform.position = Vector3.MoveTowards (transform.position, LandingPosition.transform.position, 50f * Time.deltaTime);
-			Debug.Log (DistanceToFly);
-			transform.LookAt (LandingPosition.transform);
+			Vector3 newPosition = new Vector3();
+			if (DistanceToFly < 300)
+				FlightSpeed = 15;
+			if (DistanceToFly > 1) {
+				newPosition = Vector3.MoveTowards (transform.position, LandingPosition.transform.position, FlightSpeed * Time.deltaTime);
+				transform.LookAt (LandingPosition.transform);
+				if (DistanceToFly > 150)
+					newPosition.y = 120;
+				else {
+					var rotation = transform.eulerAngles;
+					rotation.x = 0;
+					transform.eulerAngles = rotation;
+				}
+				transform.position = newPosition;
+			}
 		}
 		if (DistanceToFly <= 20 && IsCalled) {
 			Debug.Log ("Helicopter arrived!");
 		}
+		Debug.Log (DistanceToFly);
 	}
 }
