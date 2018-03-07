@@ -35,4 +35,8 @@ public class Player : MonoBehaviour {
 	void DropFlare(){
 		Instantiate (LandingAreaPrefab, transform.position, transform.rotation);
 	}
+
+	void OnTriggerEnter(Collider collider){
+		Debug.Log (collider.tag);
+	}
 }

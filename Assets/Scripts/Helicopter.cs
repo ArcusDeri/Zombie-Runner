@@ -45,6 +45,5 @@ public class Helicopter : MonoBehaviour {
 		if (DistanceToFly <= 20 && IsCalled) {
 			Debug.Log ("Helicopter arrived!");
 		}
-		Debug.Log (DistanceToFly);
 	}
 }
