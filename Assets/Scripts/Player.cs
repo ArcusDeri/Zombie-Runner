@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider){
 		if (collider.tag == "Zombie") {
-			//SceneManager.LoadScene ("GameOver", LoadSceneMode.Additive);
+			SceneManager.LoadScene ("GameOver", LoadSceneMode.Single);
 		}
 	}
 }

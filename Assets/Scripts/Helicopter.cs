@@ -5,15 +5,9 @@ using UnityEngine;
 public class Helicopter : MonoBehaviour {
 
 	private bool IsCalled = false;
-	private Rigidbody MyRigidBody;
 	private Transform LandingPosition;
 	private float DistanceToFly;
 	private float FlightSpeed = 120f;
-
-	// Use this for initialization
-	void Start () {
-		MyRigidBody = GetComponent<Rigidbody> ();
-	}
 
 	void OnDispatchHelicopter(){
 		if (!IsCalled) {

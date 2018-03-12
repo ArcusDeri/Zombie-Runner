@@ -18,7 +18,7 @@ public class ClearArea : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TimeSinceLastTrigger += Time.deltaTime;
-		if (TimeSinceLastTrigger >= 1f && Time.realtimeSinceStartup > 10f && !IsDisplayed) {
+		if (TimeSinceLastTrigger >= 1f && Time.realtimeSinceStartup > 30f && !IsDisplayed) {
 			SendMessageUpwards ("OnFindClearArea");
 			HUD.SetActive (true);
 			IsDisplayed = true;
