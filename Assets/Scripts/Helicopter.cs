@@ -44,6 +44,7 @@ public class Helicopter : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider){
 		if (collider.tag == "Player") {
+			PlayerPrefs.SetFloat ("LastScore",Time.timeSinceLevelLoad);
 			SceneManager.LoadScene ("Win", LoadSceneMode.Single);
 		}
 	}
