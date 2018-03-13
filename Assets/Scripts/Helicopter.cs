@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Helicopter : MonoBehaviour {
 
@@ -38,6 +39,12 @@ public class Helicopter : MonoBehaviour {
 		}
 		if (DistanceToFly <= 20 && IsCalled) {
 			Debug.Log ("Helicopter arrived!");
+		}
+	}
+
+	void OnTriggerEnter(Collider collider){
+		if (collider.tag == "Player") {
+			SceneManager.LoadScene ("Win", LoadSceneMode.Single);
 		}
 	}
 }
