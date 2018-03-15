@@ -8,17 +8,22 @@ public class WinScoreDisplay : MonoBehaviour {
 
 	public Text View;
 
+	private float WinScore;
+
 	// Use this for initialization
 	void Start () {
-		var winScore = PlayerPrefs.GetFloat ("LastScore");
-		View.text = winScore.ToString() + " seconds.";
+		WinScore = PlayerPrefs.GetFloat ("LastScore");
+		WinScore = Mathf.Round (WinScore * 100f) / 100f;
 
-		string filePath = Path.Combine (Application.streamingAssetsPath,"data.JSON");
+		UpdateHighScores ();
+		SetTextMessage ();
+	}
 
-		var scoreData = new ScoreData ();
-		scoreData.Scores.Add (winScore);
-		var highscores = JsonUtility.ToJson (scoreData,true);
-		File.WriteAllText (filePath, highscores);
-		Debug.Log (highscores.ToString());
+	void UpdateHighScores(){
+		Highscores.SaveNewScore (WinScore);
+	}
+
+	void SetTextMessage(){
+		View.text = WinScore.ToString() + " seconds.";
 	}
 }
