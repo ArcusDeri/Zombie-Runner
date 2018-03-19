@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClearArea : MonoBehaviour {
 
@@ -22,18 +23,19 @@ public class ClearArea : MonoBehaviour {
 			SendMessageUpwards ("OnFindClearArea");
 			HUD.SetActive (true);
 			IsDisplayed = true;
-			Invoke ("HideMessage", 10f);
+			Invoke ("UpdateMessage", 15f);
 		}
 	}
 
 	void OnTriggerStay(Collider collider){
 		if (collider.tag != "Player") {
 			TimeSinceLastTrigger = 0f;
-			HUD.SetActive (false);
 		}
 	}
 
-	void HideMessage(){
-		HUD.SetActive (false);
+	void UpdateMessage(){
+		var message = HUD.GetComponentInChildren<Text> ();
+		message.text = "Wait for the helicopter and get into it when it arrives!"; 
+		//HUD.SetActive (false);
 	}
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45026213, g: 0.4979155, b: 0.5625883, a: 1}
+  m_IndirectSpecularColor: {r: 0.4497323, g: 0.496921, b: 0.5601598, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -100,7 +100,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 30
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -234,13 +234,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20664769}
-  m_LocalRotation: {x: 0.18165874, y: -0.2542007, z: 0.048675306, w: 0.94869006}
+  m_LocalRotation: {x: 0.17154844, y: -0.2547045, z: 0.045966256, w: 0.9505703}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.68, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.46, y: -30, z: 0}
 --- !u!123 &20664772
 LensFlare:
   m_ObjectHideFlags: 0
@@ -446,7 +446,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -2591,7 +2591,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2808,7 +2808,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -5097,7 +5097,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -7946,7 +7946,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -8265,8 +8265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 290, y: 30}
+  m_AnchoredPosition: {x: 100, y: -180}
+  m_SizeDelta: {x: 490, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974602469
 MonoBehaviour:
@@ -8391,7 +8391,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -9070,7 +9070,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -10083,7 +10083,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -10628,7 +10628,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -10988,7 +10988,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -11393,7 +11393,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -11535,7 +11535,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -12961,7 +12961,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -13806,7 +13806,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -13949,7 +13949,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
@@ -14726,7 +14726,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -15478,7 +15478,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.5
+  m_Speed: 0.85
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -16395,6 +16395,11 @@ Prefab:
       propertyPath: m_Name
       value: Zombie 01
       objectReference: {fileID: 0}
+    - target: {fileID: 195238407566579380, guid: 9ff757bccf58b4542b845e8386926754,
+        type: 2}
+      propertyPath: m_Speed
+      value: 0.85
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ff757bccf58b4542b845e8386926754, type: 2}
   m_IsPrefabParent: 0
@@ -16591,7 +16596,7 @@ Prefab:
     - target: {fileID: 195663535618042370, guid: 0b5d9eebcb296ce449dded2e03bdf7fa,
         type: 2}
       propertyPath: m_Speed
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1468347890417042, guid: 0b5d9eebcb296ce449dded2e03bdf7fa, type: 2}
       propertyPath: m_Name
